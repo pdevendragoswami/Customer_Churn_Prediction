@@ -44,6 +44,7 @@ class CustomData:
         self.location=location
         self.subscription_length_months=subscription_length_months
         self.monthly_bill=monthly_bill
+        self.total_usage_gb=total_usage_gb
 
     
     def get_data_as_dataframe(self):
@@ -54,7 +55,7 @@ class CustomData:
                 'Location':[self.location],
                 'Subscription_Length_Months':[self.subscription_length_months],
                 'Monthly_Bill':[self.monthly_bill],
-                'Total_Usage_GB':[self.pay_1],
+                'Total_Usage_GB':[self.total_usage_gb],
         
             }
 
