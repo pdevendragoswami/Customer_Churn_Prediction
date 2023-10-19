@@ -1,7 +1,7 @@
-Flask
-matplotlib
 numpy
-openpyxl
 pandas
-scikit-learn
+matplotlib
 seaborn
+Flask
+scikit-learn
+openpyxl
