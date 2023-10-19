@@ -1,0 +1,15 @@
+[ 2023-10-19 19:35:55,677 ] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+[ 2023-10-19 19:35:55,677 ] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-10-19 19:35:59,134 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:35:59] "GET / HTTP/1.1" 200 -
+[ 2023-10-19 19:36:00,546 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:36:00] "GET / HTTP/1.1" 200 -
+[ 2023-10-19 19:36:01,458 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:36:01] "GET / HTTP/1.1" 200 -
+[ 2023-10-19 19:36:01,765 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:36:01] "GET / HTTP/1.1" 200 -
+[ 2023-10-19 19:36:07,949 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:36:07] "GET /predict HTTP/1.1" 200 -
+[ 2023-10-19 19:37:05,402 ] 64 root - INFO - Data converted into DF
+[ 2023-10-19 19:37:05,561 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:37:05] "POST /predict HTTP/1.1" 200 -
+[ 2023-10-19 19:37:11,012 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:37:11] "GET /predict HTTP/1.1" 200 -
+[ 2023-10-19 19:37:46,239 ] 64 root - INFO - Data converted into DF
+[ 2023-10-19 19:37:46,260 ] 96 werkzeug - INFO - 127.0.0.1 - - [19/Oct/2023 19:37:46] "POST /predict HTTP/1.1" 200 -

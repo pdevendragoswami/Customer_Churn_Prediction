@@ -20,20 +20,20 @@ def predict_datapoint():
         else:
             data = CustomData(
                 age=int(request.form.get('age')),
-                gender = str(request.form.get('gender')),
-                location = str(request.form.get('location')),
+                gender = request.form.get('gender'),
+                location = request.form.get('location'),
                 subscription_length_months = int(request.form.get('subscription_length_months')),
                 monthly_bill = float(request.form.get('monthly_bill')),
-                z = float(request.form.get('z')),
-                cut = request.form.get('cut'),
-                color= request.form.get('color'),
-                clarity = request.form.get('clarity'))
+                total_usage_gb = int(request.form.get('total_usage_gb')))
 
             final_data = data.get_data_as_dataframe()
             predict_pipeline_obj = PredictPipeline()
             pred_value = predict_pipeline_obj.predict_value(final_data)
 
-            results = round(pred_value[0],2)
+            if pred_value[0] == 0:
+                results = ' not '
+            elif pred_value[0]  == 1:
+                results = ' '
 
             return render_template('results.html',final_result = results)
 
