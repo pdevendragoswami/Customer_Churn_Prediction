@@ -10,3 +10,4 @@ Requires-Dist: seaborn
 Requires-Dist: Flask
 Requires-Dist: scikit-learn
 Requires-Dist: openpyxl
+Requires-Dist: ipykernel
